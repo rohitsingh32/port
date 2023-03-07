@@ -1,0 +1,167 @@
+
+.nav__small{
+    background-color: rgba( 0, 0, 0, 0.3);
+    position: fixed;
+    left: 50%;
+    width: max-content;
+    display: block;
+    padding: 0.7rem 1.7rem;
+    z-index: 2;
+    transform: translateX(-50%);
+    bottom: 1rem;
+    display: flex;
+    gap: 0.8rem;
+    border-radius: 3rem;
+    backdrop-filter: blur(15px);
+   
+}
+
+.nav__small a{
+    background: transparent;
+    padding: 0.5rem;
+    border-radius: 50%;
+    display: flex;
+    color: var(--color-light);
+    font-size: 1.5rem;
+}
+.nav__small a:hover{
+    background-color: var(--color-primary);
+}
+.nav__small a.active {
+    background: var(--color-primary);
+    color: var(--color-light);
+}
+
+@media screen and (min-width: 750px) {
+    .nav__small {
+          display: none; 
+          
+   } 
+}
+
+
+
+/* =========== Skills Section ========= */
+
+.section__title{
+    margin-bottom: 4rem;
+}
+.skills__container{
+    display: grid;
+    grid-template-columns: 360px 320px;
+    column-gap: 3rem;
+    justify-content: center;
+}
+.skills__header{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.skills__header:not(:last-child){
+          margin-bottom: 2.5rem;
+}
+.skills__icon,
+.skills__arrow{
+    font-size: 2rem;
+    color: var(--color-primary);
+}
+.skills__icon{
+    margin-right: 0.75rem;
+}
+
+
+.skills__title {
+    font-size: 1.6rem;
+    
+}
+
+.skills__arrow{
+    margin-left: auto;
+}
+
+/* .skills__active .skills__arrow {
+    transform: rotate(-90deg);
+    transition: .3s;
+}
+.skills [data-content] {
+    display: none;
+} */
+
+.skills__active[data-content] {
+    display: block;
+}
+
+.skills__list {
+    row-gap: 1.8rem;
+   margin-bottom: 1.8rem;
+}
+.skills__titles{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+}
+.skills__name{
+    font-size: 1.3rem;
+}
+.skills__bar,
+.skills__percentage {
+    height: 10px;
+    border-radius: .25rem;
+}
+.skills__bar{
+    background-color: rgb(181, 185, 185);
+}
+.skills__percentage{
+    display: block;
+    background-color: var(--color-primary);
+}
+.skills__header{
+    margin-top: 4rem;
+}
+.section__title{
+    text-decoration: underline var(--color-primary);
+    letter-spacing: 2px;
+}
+
+@media screen and (max-width:1024px){
+   
+
+    .skills__tabs{
+       position: relative;
+       
+       
+    }
+    .section__title{
+        margin-top: -5rem;
+        
+    }
+    .skills__subtitle{
+        font-size: 1rem;
+        font-weight: 200;
+        letter-spacing: 1px;
+    }
+    .skills__title{
+        font-size: 1.3rem;
+    }
+    .skills__name{
+      font-size: 1rem;
+      letter-spacing: 2px;
+    }
+    .skills__number{
+        font-size: 1rem;
+    }
+    
+}
+
+
+/* theme custmization*/
+.square {
+    color: var( --text-primary);
+    background-color: var(--background);
+    transition: all 1s;
+    
+}
+.skills__title{
+    color: var(--accent);
+}

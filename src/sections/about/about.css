@@ -1,0 +1,215 @@
+.about__container{
+    display: grid;
+    grid-template-columns: 35% 53%;
+    gap: 12%;
+   
+}
+.about__right h2{
+    text-decoration: underline var(--color-primary);
+    letter-spacing: 1px;
+}
+.about__portrait{
+    height: fit-content;
+    border: 15px solid white;
+  
+    transition: var(--transition);
+}
+.about__portrait{
+    border: 15px solid var(--background);
+}
+
+.about__portrait:hover{
+    border-width: 0;
+    transition: 1s;
+    
+}
+
+
+.about__cards{
+    margin: 3rem 0 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    
+}
+.card .about__card{
+    text-align: center;
+    background-color: transparent;
+}
+
+.about__card-icon {
+    font-size: 1.5rem;
+    color: var(--color-black);
+    border-radius: var(--border-radius-3);
+    width: fit-content;
+    margin-inline: auto;
+    padding: 0.6rem;
+   
+   
+    align-items: center;
+    transition: var(--transition);
+}
+
+.about__card .about__card-icon:hover {
+    background: var(--color-primary);
+    color: var(--color-white);
+     transition: 1s;
+     cursor: pointer;
+}
+.card .about__card h5{
+    margin: 1rem 0;
+}
+.about__right p {
+    margin-bottom: 0.8rem;
+    width: fit-content;
+}
+.about__right .btn {
+    margin-top: 2.5rem;
+    
+}
+
+
+
+
+#about{
+    margin-top: -2rem;
+   
+}
+.about__container{
+   margin-top: -5rem;
+   margin-bottom: -6rem;
+}
+.row1{
+   height: 44vh;
+}
+.para {
+    text-align: justify;
+}
+
+
+/* ==========MEDIA QUIERS(tablets)=========== */
+
+@media screen and (min-width: 1200px) {
+   .about__left {
+        padding: 3rem;
+        margin-bottom: -6rem;
+        margin-top: -5rem;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+   
+    .about__right{
+        grid-template-columns: 1fr;
+    }
+    .about__right h2 {
+        text-align: center;
+    }
+    .about__cards{
+        position: relative;
+        left: -2rem;
+    }
+    .para p{
+        font-weight: 200;
+    }
+
+}
+
+@media screen and (max-width: 750px) {
+    .about__cards {
+        grid-template-columns: 1fr 1fr ;
+        gap: 1rem;
+    }
+    .about__cards{
+        position: relative; 
+        left: -2rem;
+    }
+    .para p{
+        word-break: break-all;
+        font-size: .8rem;
+       
+    }
+    
+ 
+}
+@media screen and (max-width: 450px) {
+  
+    .about__card:nth-child(2){
+        position: absolute;
+        top: 11rem;
+        right: 9.8rem;
+        padding: -2rem;
+    }
+    .about__card:nth-child(3){
+      
+        position: absolute;
+        top: 24rem;
+        right: 9.2rem;
+        padding: -2rem;
+       
+    }
+    .about__card:nth-child(1){
+        position: relative;
+        top: 0;
+        left: 2rem;
+        padding: -2rem;
+    }
+    @media screen and (max-width: 360px){
+        .about__card:nth-child(3){
+      
+            position: absolute;
+            top: 24rem;
+            right: 8rem;
+            padding: -2rem;
+           
+        }
+    }
+}
+
+  
+
+@media screen and (max-width: 300px) {
+    .about__cards {
+        grid-template-columns: 1fr ;
+        gap: 1rem;
+    }
+    .about__right h2{
+         position: relative;
+        top:-4rem;
+        left: -4rem; 
+         font-size: 1.5rem;
+    }
+    
+}
+
+
+
+/* theme custmization*/
+.square {
+    color: var( --text-primary);
+    background-color: var(--background);
+    transition: all 1s;
+    
+}
+.about__card{
+    color: var( --text-primary);
+}
+.about__card:hover{
+    border: 4px solid var(--accent);
+    color: var( --text-primary);
+    background-color: var(--backgrounds);
+}
+.about__card h5{
+    color: var( --text-secondary);
+}
+.about__card-icon{
+    color: var(--accent);
+}
+
+.about__card:hover
+.about__card-icon{
+    background-color: var(--color-primary);
+    transition: 1s;
+    color: white;
+    
+}

@@ -1,0 +1,97 @@
+nav{
+    width: 100vw;
+    height: 5rem;
+    display: grid;
+    place-items: center;
+    background: var(--color-primary);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    box-shadow: 0 1rem 1.5rem hsla(var(--primary-hue),
+    68%, 42%, 20%);
+    transition: var(--transition);
+}
+
+.nav__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__logo {
+    width: 3rem;
+    border-radius: 50%;
+    overflow: hidden;
+    
+   
+}
+.nav__menu {
+    display: flex;
+    gap: 3.5rem;
+    padding-right: 50px;
+}
+.nav__menu li a:hover {
+  font-weight: bold;
+  text-decoration: underline;
+  transition: 0.5s;
+}
+#theme__icon {
+    background: transparent;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+
+/*========= HIDE NAV MENU TABLETS AND PHONE ===========*/
+@media screen and (max-width: 750px) {
+     .nav__menu {
+           display: none; 
+           
+    } 
+}
+@media screen and (max-width: 800px) {
+    .nav__menu {
+         gap: 2rem;
+        
+          
+   } 
+   .nav__menu li{
+    position: relative;
+    left: -2rem;
+   }
+}
+
+nav  {
+    
+    background-color: var(--background-1);
+    transition: all 1s;
+}
+.port  {
+   position: fixed;
+   left: 20%;
+  
+}
+.port h2{
+    color: white;
+    text-decoration: underline ;
+    letter-spacing: 2px;
+  
+}
+@media screen and (min-width: 750px){
+    .port{
+        display: none;
+    }
+}
+@media screen and (max-width: 400px){
+    .port{
+        position: fixed;
+        left: 25%;
+    }
+}
+
+
+
+
+
