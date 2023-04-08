@@ -19,7 +19,7 @@ const Header = () => {
       loop: true,
 
     })
-  })
+  },[]);
 
 
   return (
